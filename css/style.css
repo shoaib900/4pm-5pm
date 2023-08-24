@@ -2,31 +2,31 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: rgb(255, 255, 255);
+.box{
+    display: grid;
+    row-gap: 50px;
+    column-gap: 50px;
+    grid-template-columns: 20% 20% 20% ;
+    height: 100vh;
+    width: 100vw;
+    background-color: cornflowerblue;
+}
+.box > div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+.stain1{
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 h1{
+    background-color: grey;
+}
+h1:hover{
     background-color: red;
+    cursor: pointer;
 }
-p{
-    border: 1px dashed black;
-    /* margin:  top right bottom left */
-    /* margin: 10px 50px 30px 4px; */
-    /* padding: 10px 50px 0px 90px ; */
-    /* padding-left: 40px; */
-    margin: 40px;
-    background-color: aquamarine;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 4px 5px 8px  black;
-}
-img{
-    border-radius: 50%;
-}
-
-.box{
-    background-color: red;
-    height: 100px;
-    width: 100%;
-    border: 100px solid black;
+h1:active{
+    background-color: pink;
 }
